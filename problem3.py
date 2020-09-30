@@ -26,3 +26,25 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+num1 = float(input("Enter an integer=>"))
+num2 = float(input("Enter an integer=>"))
+num3 = float(input("Enter an integer=>"))
+
+if (num1 > num2) and (num1 > num3):
+    if num1**2 == (num2**2 + num3**2):
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " form a Pythagorean triple")
+    else :
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " do not form a Pythagorean triple")
+elif (num2 > num1) and (num2 > num3):
+    if num2**2 == (num1**2 + num3**2):
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " form a Pythagorean triple")
+    else :
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " do not form a Pythagorean triple")
+elif (num3 > num1) and (num3 > num2):
+    if num3**2 == (num1**2 + num2**2):
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " form a Pythagorean triple")
+    else :
+        print(str(num1) + "," + str(num2) + "," + str(num3) + " do not form a Pythagorean triple")
+else :
+    print(str(num1) + "," + str(num2) + "," + str(num3) + " do not form a Pythagorean triple")

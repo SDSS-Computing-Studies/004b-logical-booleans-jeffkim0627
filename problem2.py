@@ -23,3 +23,20 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+
+import math
+int1 = float(input("Enter a first number"))
+int2 = float(input("Enter a second number"))
+
+if (int1 > int2) == True:
+    if int1 / int2 == math.ceil(int1 / int2):
+        print(str(int2) + " is a factor of " + str(int1))
+    else :
+        print(str(int2) + " is not a factor of " + str(int1))
+elif (int2 > int1) == True:
+    if int2 / int1 == math.ceil(int2 / int1):
+        print(str(int1) + " is a factor of " + str(int2))
+    else:
+        print(str(int1) + " is not a factor of " + str(int2))
+elif (int1 == int2) == True:
+    print("Both numbers are factor to each other")

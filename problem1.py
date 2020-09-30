@@ -19,3 +19,10 @@ Enter a number: 48
 """
 
 #! python3
+
+import math
+number = float(input("Enter a number"))
+if (number / 6 == math.ceil(number / 6)) and (number / 8 != math.ceil(number/8)):
+    print(str(number) + " is frue")
+else:
+    print(str(number) + " is not frue")
