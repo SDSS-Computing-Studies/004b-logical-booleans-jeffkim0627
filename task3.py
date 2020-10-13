@@ -19,6 +19,6 @@ import math
 number = float(input("Enter a number").strip())
 value = math.ceil(number)
 if number == abs(value):
-    print("The number is a positive integer")
+    print(str(number) + " is a positive integer")
 else:
-    print("The number is not an positive integer")
+    print(str(number) + " is not an positive integer")
