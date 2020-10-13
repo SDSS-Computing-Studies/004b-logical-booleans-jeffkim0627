@@ -16,7 +16,7 @@ Enter a number: -3
 -3 is not a positive integer
 """
 import math
-number = float(input("Enter a number"))
+number = float(input("Enter a number").strip())
 value = math.ceil(number)
 if number == abs(value):
     print("The number is a positive integer")
